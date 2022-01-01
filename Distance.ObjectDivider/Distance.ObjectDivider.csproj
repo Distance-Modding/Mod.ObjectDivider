@@ -7,8 +7,8 @@
     <ProjectGuid>{7BCB2908-B003-45D9-BE68-50CBA5217603}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Mod.Template</RootNamespace>
-    <AssemblyName>Mod.Template</AssemblyName>
+    <RootNamespace>Distance.ObjectDivider</RootNamespace>
+    <AssemblyName>Distance.ObjectDivider</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -86,11 +86,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mod.cs" />
+    <Compile Include="ConfigurationLogic.cs" />
+    <Compile Include="Entry.cs" />
+    <Compile Include="Harmony\Assembly-CSharp\CubeToPlanes\CubeToPlaneAction.cs" />
+    <Compile Include="Harmony\Assembly-CSharp\CubeToPlanes\CubeToPlaneTool.cs" />
+    <Compile Include="Harmony\Assembly-CSharp\ObjectDivide\DivideAction.cs" />
+    <Compile Include="Harmony\Assembly-CSharp\ObjectMerge\MergeAction.cs" />
+    <Compile Include="Harmony\Assembly-CSharp\ObjectMerge\MergeTool.cs" />
+    <Compile Include="Harmony\Assembly-CSharp\ObjHelper\ObjHelper.cs" />
+    <Compile Include="Harmony\Assembly-CSharp\ObjectDivide\Tessellator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Mod.Template.targets" />
+    <None Include="Distance.ObjectDivider.targets" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,12 @@
+{
+	"FriendlyName": "ObjectDivider",
+	"Author": "PB",
+	"Contact": "( .-.)",
+	"ModuleFileName": "Distance.ObjectDivider.dll",
+	"Dependencies": [],
+	"SkipLoad": false,
+	"Priority": 10,
+	"RequiredGSLs": [
+		"com.github.reherc/Centrifuge.Distance"
+	]
+}
