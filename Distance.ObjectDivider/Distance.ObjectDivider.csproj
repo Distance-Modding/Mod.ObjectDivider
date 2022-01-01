@@ -94,7 +94,7 @@
     <Compile Include="Harmony\Assembly-CSharp\ObjectMerge\MergeAction.cs" />
     <Compile Include="Harmony\Assembly-CSharp\ObjectMerge\MergeTool.cs" />
     <Compile Include="Harmony\Assembly-CSharp\ObjHelper\ObjHelper.cs" />
-    <Compile Include="Harmony\Assembly-CSharp\ObjectDivide\Tessellator.cs" />
+    <Compile Include="Harmony\Assembly-CSharp\ObjectDivide\DividerTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

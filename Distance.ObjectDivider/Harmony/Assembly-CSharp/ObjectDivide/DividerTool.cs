@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Mod.ObjectDivider.Harmony
 {
-    [EditorTool, KeyboardShortcut("CTRL+D")]
+    [EditorTool, KeyboardShortcut("CTRL+SHIFT+D")]
     public class DividerTool : InstantTool
     {
         internal static ToolInfo info_ => new ToolInfo("Divider", "Divides objects.", ToolCategory.Edit, ToolButtonState.Button, true, 1122);
