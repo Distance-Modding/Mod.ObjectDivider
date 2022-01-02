@@ -19,18 +19,12 @@ namespace Mod.ObjectDivider.Harmony
         private ReferenceMap.Handle<GameObject> newObjectHandle_;
         private byte[] deletedObjectBytes_;
         private GroupAction groupAction_;
-        private List<GroupAction> groupActions_2 = new List<GroupAction>();
-        private List<ReferenceMap.Handle<GameObject>> newgrouphandles = new List<ReferenceMap.Handle<GameObject>>();
 
         private bool nothingtodo = false;
 
         public MergeAction(GameObject[] gameObjects)
         {
             ReferenceMap referenceMap = G.Sys.LevelEditor_.ReferenceMap_;
-
-            List<GameObject> cubeObjects = new List<GameObject>();
-
-            int newObjectCount = 0;
 
             if (gameObjects.Length > 0)
             {
@@ -60,8 +54,7 @@ namespace Mod.ObjectDivider.Harmony
         {
             if (!nothingtodo)
             {
-                int newObjectHandleIndex = 0;
-                List<GameObject> newObjects = new List<GameObject>();
+
                 Group objectGroup = groupAction_.GroupObjects();
                 GameObject groupObject = objectGroup.gameObject;
 
@@ -78,16 +71,20 @@ namespace Mod.ObjectDivider.Harmony
                 LevelLayer origobjlayer = levelEditor.WorkingLevel_.GetLayerOfObject(originalobjs[0]);
                 GameObject mergeObject = DuplicateObjectsAction.Duplicate(originalobjs[0]);
                 levelEditor.AddGameObject(ref newObjectHandle_, mergeObject, origobjlayer);
-
+                Vector3 mergeObjectPos = mergeObject.GetComponent<Transform>().position;
+                Quaternion mergeObjectRot = mergeObject.GetComponent<Transform>().rotation;
+                Vector3 mergeObjectScl = mergeObject.GetComponent<Transform>().localScale;
+                //mergeObject.GetComponent<Transform>().rotation = Quaternion.identity;
                 GroupAction groupAction_2 = Group.CreateGroupAction(new GameObject[] { mergeObject }, mergeObject);
                 Group group = groupAction_2.GroupObjects();
                 GameObject mergeObjectGroup = group.gameObject;
-                Vector3 objsize = group.localBounds_.size;
-                
+                mergeObjectGroup.GetComponent<Transform>().localRotation = mergeObjectRot;
+                mergeObjectGroup.GetChild(0).GetComponent<Transform>().position = mergeObjectPos;
+                mergeObjectGroup.GetChild(0).GetComponent<Transform>().rotation = mergeObjectRot;
+                group.localBounds_ = Group.CalculateBoundsFromImmediateChildren(group);
+                //Vector3 objsize = group.localBounds_.size;
 
                 Vector3 mergeObjectSize = group.localBounds_.size;
-                
-                //Vector3 mergeObjectConPosition = ObjHelper.getConvenientObjPosition(mergeObject);
 
                 Vector3 newMergeObjectScale = new Vector3(groupSize.x / mergeObjectSize.x, groupSize.y / mergeObjectSize.y, groupSize.z / mergeObjectSize.z);
 
