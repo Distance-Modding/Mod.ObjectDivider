@@ -1,8 +1,8 @@
 # Distance Object Divider
 
-> Features:
-<br>- A tool that subdivides simples. (Shortcut [Ctrl+Shift+D].)
-<br>- A tool that turns CubeGS into PlaneGS. (Shortcut [Shift+P].)
-<br>- A tool that merges objects. (Shortcut [Shift+K].)
-<br>
-<br>Pretty simple hopefully!
+## Features:
+- A tool that subdivides simples. (Shortcut <kbd>Ctrl+Shift+D</kbd>.)
+- A tool that turns CubeGS into PlaneGS. (Shortcut <kbd>Shift+P</kbd>.)
+- A tool that merges objects. (Shortcut <kbd>Shift+K</kbd>.)
+
+Pretty simple hopefully!
