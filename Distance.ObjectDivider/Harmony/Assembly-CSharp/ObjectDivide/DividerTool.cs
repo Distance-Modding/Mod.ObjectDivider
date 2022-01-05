@@ -1417,19 +1417,23 @@ namespace Mod.ObjectDivider.Harmony
                         dividerspacingInputX.GetComponent<UIWidget>().ResizeCollider();
                         //tabSystemUIRoot.gameObject.GetChildren().Last().GetChildren().Last().AddComponent<BoxCollider>().size = new Vector3(intinputwig.width,intinputwig.height,0);
 
-
+                        string lastXSpacingLabel = lastXSpacing + "";
+                        if (!lastXSpacingLabel.Contains("."))
+                        {
+                            lastXSpacingLabel = lastXSpacingLabel +".0";
+                        }
 
                         dividerspacingInputX.AddComponent<UIExNumericInput>();
-                        dividerspacingInputX.GetComponent<UIExNumericInput>().value = lastXSpacing + ".0";
+                        dividerspacingInputX.GetComponent<UIExNumericInput>().value = lastXSpacingLabel;
                         dividerspacingInputX.GetComponent<UIExNumericInput>().cursorPosition = 0;
-                        dividerspacingInputX.GetComponent<UIExNumericInput>().defaultText = lastXSpacing + ".0";
+                        dividerspacingInputX.GetComponent<UIExNumericInput>().defaultText = lastXSpacingLabel;
                         dividerspacingInputX.GetComponent<UIExNumericInput>().enabled = true;
                         dividerspacingInputX.GetComponent<UIExNumericInput>().selectionStart = 0;
                         dividerspacingInputX.GetComponent<UIExNumericInput>().selectionEnd = 0;
                         dividerspacingInputX.GetComponent<UIExNumericInput>().characterLimit = 256;
                         //tabSystemUIRoot.gameObject.GetChildren().Last().GetChildren().Last().GetComponent<UIExIntegerInput>().facadeButton_ = intinmputcomp.facadeButton_;
                         //tabSystemUIRoot.gameObject.GetChildren().Last().GetChildren().Last().GetComponent<UIExIntegerInput>().label = intinmputcomp.label;
-                        dividerspacingInputX.GetComponent<UIExNumericInput>().mDefaultText = lastXSpacing + ".0";
+                        dividerspacingInputX.GetComponent<UIExNumericInput>().mDefaultText = lastXSpacingLabel;
                         dividerspacingInputX.GetComponent<UIExNumericInput>().mDoInit = false;
                         dividerspacingInputX.GetComponent<UIExNumericInput>().mLoadSavedValue = true;
                         dividerspacingInputX.GetComponent<UIExNumericInput>().mPosition = 63;
@@ -1533,7 +1537,7 @@ namespace Mod.ObjectDivider.Harmony
                         sdixValLab.GetComponent<UILabel>().multiLine = intinputValueLabelUILabel.multiLine; //True->false
                         sdixValLab.GetComponent<UILabel>().overflowMethod = UILabel.Overflow.ClampContent;//intinputValueLabelUILabel.overflowMethod; //Shrinkcontent->Clampcontent
                         sdixValLab.GetComponent<UILabel>().supportEncoding = intinputValueLabelUILabel.supportEncoding; //True->false
-                        sdixValLab.GetComponent<UILabel>().text = lastXSpacing + ".0";
+                        sdixValLab.GetComponent<UILabel>().text = lastXSpacingLabel;
                         sdixValLab.GetComponent<UILabel>().trueTypeFont = intinputValueLabelUILabel.trueTypeFont; //->PetitaBold
                         sdixValLab.GetComponent<UILabel>().width = (int)(126 / 1.5); //100->126
                         sdixValLab.GetComponent<UILabel>().aspectRatio = intinputValueLabelUILabel.aspectRatio; //1->7.875
@@ -1633,19 +1637,23 @@ namespace Mod.ObjectDivider.Harmony
                         dividerspacingInputY.GetComponent<UIWidget>().ResizeCollider();
                         //tabSystemUIRoot.gameObject.GetChildren().Last().GetChildren().Last().AddComponent<BoxCollider>().size = new Vector3(intinputwig.width,intinputwig.height,0);
 
-
+                        string lastYSpacingLabel = lastYSpacing + "";
+                        if (!lastYSpacingLabel.Contains("."))
+                        {
+                            lastYSpacingLabel = lastYSpacingLabel + ".0";
+                        }
 
                         dividerspacingInputY.AddComponent<UIExNumericInput>();
-                        dividerspacingInputY.GetComponent<UIExNumericInput>().value = lastYSpacing + ".0";
+                        dividerspacingInputY.GetComponent<UIExNumericInput>().value = lastYSpacingLabel;
                         dividerspacingInputY.GetComponent<UIExNumericInput>().cursorPosition = 0;
-                        dividerspacingInputY.GetComponent<UIExNumericInput>().defaultText = lastYSpacing + ".0";
+                        dividerspacingInputY.GetComponent<UIExNumericInput>().defaultText = lastYSpacingLabel;
                         dividerspacingInputY.GetComponent<UIExNumericInput>().enabled = true;
                         dividerspacingInputY.GetComponent<UIExNumericInput>().selectionStart = 0;
                         dividerspacingInputY.GetComponent<UIExNumericInput>().selectionEnd = 0;
                         dividerspacingInputY.GetComponent<UIExNumericInput>().characterLimit = 256;
                         //tabSystemUIRoot.gameObject.GetChildren().Last().GetChildren().Last().GetComponent<UIExIntegerInput>().facadeButton_ = intinmputcomp.facadeButton_;
                         //tabSystemUIRoot.gameObject.GetChildren().Last().GetChildren().Last().GetComponent<UIExIntegerInput>().label = intinmputcomp.label;
-                        dividerspacingInputY.GetComponent<UIExNumericInput>().mDefaultText = lastYSpacing + ".0";
+                        dividerspacingInputY.GetComponent<UIExNumericInput>().mDefaultText = lastYSpacingLabel;
                         dividerspacingInputY.GetComponent<UIExNumericInput>().mDoInit = false;
                         dividerspacingInputY.GetComponent<UIExNumericInput>().mLoadSavedValue = true;
                         dividerspacingInputY.GetComponent<UIExNumericInput>().mPosition = 63;
@@ -1749,7 +1757,7 @@ namespace Mod.ObjectDivider.Harmony
                         sdiyValLab.GetComponent<UILabel>().multiLine = intinputValueLabelUILabel.multiLine; //True->false
                         sdiyValLab.GetComponent<UILabel>().overflowMethod = UILabel.Overflow.ClampContent;//intinputValueLabelUILabel.overflowMethod; //Shrinkcontent->Clampcontent
                         sdiyValLab.GetComponent<UILabel>().supportEncoding = intinputValueLabelUILabel.supportEncoding; //True->false
-                        sdiyValLab.GetComponent<UILabel>().text = lastYSpacing + ".0";
+                        sdiyValLab.GetComponent<UILabel>().text = lastYSpacingLabel;
                         sdiyValLab.GetComponent<UILabel>().trueTypeFont = intinputValueLabelUILabel.trueTypeFont; //->PetitaBold
                         sdiyValLab.GetComponent<UILabel>().width = (int)(126 / 1.5); //100->126
                         sdiyValLab.GetComponent<UILabel>().aspectRatio = intinputValueLabelUILabel.aspectRatio; //1->7.875
@@ -1849,19 +1857,23 @@ namespace Mod.ObjectDivider.Harmony
                         dividerspacingInputZ.GetComponent<UIWidget>().ResizeCollider();
                         //tabSystemUIRoot.gameObject.GetChildren().Last().GetChildren().Last().AddComponent<BoxCollider>().size = new Vector3(intinputwig.width,intinputwig.height,0);
 
-
+                        string lastZSpacingLabel = lastZSpacing + "";
+                        if (!lastZSpacingLabel.Contains("."))
+                        {
+                            lastZSpacingLabel = lastZSpacingLabel + ".0";
+                        }
 
                         dividerspacingInputZ.AddComponent<UIExNumericInput>();
-                        dividerspacingInputZ.GetComponent<UIExNumericInput>().value = lastZSpacing + ".0";
+                        dividerspacingInputZ.GetComponent<UIExNumericInput>().value = lastZSpacingLabel;
                         dividerspacingInputZ.GetComponent<UIExNumericInput>().cursorPosition = 0;
-                        dividerspacingInputZ.GetComponent<UIExNumericInput>().defaultText = lastZSpacing + ".0";
+                        dividerspacingInputZ.GetComponent<UIExNumericInput>().defaultText = lastZSpacingLabel;
                         dividerspacingInputZ.GetComponent<UIExNumericInput>().enabled = true;
                         dividerspacingInputZ.GetComponent<UIExNumericInput>().selectionStart = 0;
                         dividerspacingInputZ.GetComponent<UIExNumericInput>().selectionEnd = 0;
                         dividerspacingInputZ.GetComponent<UIExNumericInput>().characterLimit = 256;
                         //tabSystemUIRoot.gameObject.GetChildren().Last().GetChildren().Last().GetComponent<UIExIntegerInput>().facadeButton_ = intinmputcomp.facadeButton_;
                         //tabSystemUIRoot.gameObject.GetChildren().Last().GetChildren().Last().GetComponent<UIExIntegerInput>().label = intinmputcomp.label;
-                        dividerspacingInputZ.GetComponent<UIExNumericInput>().mDefaultText = lastZSpacing + ".0";
+                        dividerspacingInputZ.GetComponent<UIExNumericInput>().mDefaultText = lastZSpacingLabel;
                         dividerspacingInputZ.GetComponent<UIExNumericInput>().mDoInit = false;
                         dividerspacingInputZ.GetComponent<UIExNumericInput>().mLoadSavedValue = true;
                         dividerspacingInputZ.GetComponent<UIExNumericInput>().mPosition = 63;
@@ -1965,7 +1977,7 @@ namespace Mod.ObjectDivider.Harmony
                         sdizValLab.GetComponent<UILabel>().multiLine = intinputValueLabelUILabel.multiLine; //True->false
                         sdizValLab.GetComponent<UILabel>().overflowMethod = UILabel.Overflow.ClampContent;//intinputValueLabelUILabel.overflowMethod; //Shrinkcontent->Clampcontent
                         sdizValLab.GetComponent<UILabel>().supportEncoding = intinputValueLabelUILabel.supportEncoding; //True->false
-                        sdizValLab.GetComponent<UILabel>().text = lastZSpacing + ".0";
+                        sdizValLab.GetComponent<UILabel>().text = lastZSpacingLabel;
                         sdizValLab.GetComponent<UILabel>().trueTypeFont = intinputValueLabelUILabel.trueTypeFont; //->PetitaBold
                         sdizValLab.GetComponent<UILabel>().width = (int)(126 / 1.5); //100->126
                         sdizValLab.GetComponent<UILabel>().aspectRatio = intinputValueLabelUILabel.aspectRatio; //1->7.875
@@ -2369,9 +2381,11 @@ namespace Mod.ObjectDivider.Harmony
             {
                 UIExNumericInput inputcomp = dividerspacingInputXP.GetComponent<UIExNumericInput>();
                 UILabel uilabelinput = FOONIC(dividerspacingInputXP, "ValueLabel").GetComponent<UILabel>();
-                uilabelinput.text = (inputcomp.Value_ - .1F) + "";
-                inputcomp.value = (inputcomp.Value_ - .1F) + "";
-                lastXSpacing -= .1F;
+                float floatvalu = inputcomp.Value_;
+                uilabelinput.text = (floatvalu - .1F) + "";
+                inputcomp.value = (floatvalu - .1F) + "";
+                inputcomp.Value_ = floatvalu - .1F;
+                lastXSpacing = inputcomp.Value_;
             }
         }
 
@@ -2381,9 +2395,11 @@ namespace Mod.ObjectDivider.Harmony
             {
                 UIExNumericInput inputcomp = dividerspacingInputXP.GetComponent<UIExNumericInput>();
                 UILabel uilabelinput = FOONIC(dividerspacingInputXP, "ValueLabel").GetComponent<UILabel>();
-                uilabelinput.text = (inputcomp.Value_ + .1F) + "";
-                inputcomp.value = (inputcomp.Value_ + .1F) + "";
-                lastXSpacing += .1F;
+                float floatvalu = inputcomp.Value_;
+                uilabelinput.text = (floatvalu + .1F) + "";
+                inputcomp.value = (floatvalu + .1F) + "";
+                inputcomp.Value_ = floatvalu + .1F;
+                lastXSpacing = inputcomp.Value_;
             }
         }
 
@@ -2393,9 +2409,11 @@ namespace Mod.ObjectDivider.Harmony
             {
                 UIExNumericInput inputcomp = dividerspacingInputYP.GetComponent<UIExNumericInput>();
                 UILabel uilabelinput = FOONIC(dividerspacingInputYP, "ValueLabel").GetComponent<UILabel>();
-                uilabelinput.text = (inputcomp.Value_ - 1) + "";
-                inputcomp.value = (inputcomp.Value_ - 1) + "";
-                lastYSpacing -= 1;
+                float floatvalu = inputcomp.Value_;
+                uilabelinput.text = (floatvalu - .1F) + "";
+                inputcomp.value = (floatvalu - .1F) + "";
+                inputcomp.Value_ = floatvalu - .1F;
+                lastYSpacing = inputcomp.Value_;
             }
         }
 
@@ -2405,9 +2423,11 @@ namespace Mod.ObjectDivider.Harmony
             {
                 UIExNumericInput inputcomp = dividerspacingInputYP.GetComponent<UIExNumericInput>();
                 UILabel uilabelinput = FOONIC(dividerspacingInputYP, "ValueLabel").GetComponent<UILabel>();
-                uilabelinput.text = (inputcomp.Value_ + 1) + "";
-                inputcomp.value = (inputcomp.Value_ + 1) + "";
-                lastYSpacing += 1;
+                float floatvalu = inputcomp.Value_;
+                uilabelinput.text = (floatvalu + .1F) + "";
+                inputcomp.value = (floatvalu + .1F) + "";
+                inputcomp.Value_ = floatvalu + .1F;
+                lastYSpacing = inputcomp.Value_;
             }
         }
 
@@ -2417,9 +2437,11 @@ namespace Mod.ObjectDivider.Harmony
             {
                 UIExNumericInput inputcomp = dividerspacingInputZP.GetComponent<UIExNumericInput>();
                 UILabel uilabelinput = FOONIC(dividerspacingInputZP, "ValueLabel").GetComponent<UILabel>();
-                uilabelinput.text = (inputcomp.Value_ - 1) + "";
-                inputcomp.value = (inputcomp.Value_ - 1) + "";
-                lastZSpacing -= 1;
+                float floatvalu = inputcomp.Value_;
+                uilabelinput.text = (floatvalu - .1F) + "";
+                inputcomp.value = (floatvalu - .1F) + "";
+                inputcomp.Value_ = floatvalu - .1F;
+                lastZSpacing = inputcomp.Value_;
             }
         }
 
@@ -2429,9 +2451,11 @@ namespace Mod.ObjectDivider.Harmony
             {
                 UIExNumericInput inputcomp = dividerspacingInputZP.GetComponent<UIExNumericInput>();
                 UILabel uilabelinput = FOONIC(dividerspacingInputZP, "ValueLabel").GetComponent<UILabel>();
-                uilabelinput.text = (inputcomp.Value_ + 1) + "";
-                inputcomp.value = (inputcomp.Value_ + 1) + "";
-                lastZSpacing += 1;
+                float floatvalu = inputcomp.Value_;
+                uilabelinput.text = (floatvalu + .1F) + "";
+                inputcomp.value = (floatvalu + .1F) + "";
+                inputcomp.Value_ = floatvalu + .1F;
+                lastZSpacing = inputcomp.Value_;
             }
         }
 
@@ -2654,9 +2678,11 @@ namespace Mod.ObjectDivider.Harmony
                 UILabel uilabelintinput = FOONIC(tabSystemUIRootIntInput1P, "ValueLabel").GetComponent<UILabel>();
                 if ((intinputcomp.Value_ - 1) >= 0)
                 {
-                    uilabelintinput.text = (intinputcomp.Value_ - 1) + "";
-                    intinputcomp.value = (intinputcomp.Value_ - 1) + "";
-                    lastYDivide -= 1;
+                    int intvalu = intinputcomp.Value_;
+                    uilabelintinput.text = (intvalu - 1) + "";
+                    intinputcomp.value = (intvalu - 1) + "";
+                    intinputcomp.Value_ = intvalu - 1;
+                    lastYDivide = intinputcomp.Value_;
                     SDNOEA_Set1();
                 }
                 
@@ -2669,9 +2695,11 @@ namespace Mod.ObjectDivider.Harmony
             {
                 UIExIntegerInput intinputcomp = tabSystemUIRootIntInput1P.GetComponent<UIExIntegerInput>();
                 UILabel uilabelintinput = FOONIC(tabSystemUIRootIntInput1P, "ValueLabel").GetComponent<UILabel>();
-                uilabelintinput.text = (intinputcomp.Value_ + 1) + "";
-                intinputcomp.value = (intinputcomp.Value_ + 1) + "";
-                lastYDivide += 1;
+                int intvalu = intinputcomp.Value_;
+                uilabelintinput.text = (intvalu + 1) + "";
+                intinputcomp.value = (intvalu + 1) + "";
+                intinputcomp.Value_ = intvalu + 1;
+                lastYDivide = intinputcomp.Value_;
                 SDNOEA_Set1();
             }
         }
@@ -2684,9 +2712,11 @@ namespace Mod.ObjectDivider.Harmony
                 UILabel uilabelintinput = FOONIC(tabSystemUIRootIntInput2P, "ValueLabel").GetComponent<UILabel>();
                 if ((intinputcomp.Value_ - 1) >= 0)
                 {
-                    uilabelintinput.text = (intinputcomp.Value_ - 1) + "";
-                    intinputcomp.value = (intinputcomp.Value_ - 1) + "";
-                    lastZDivide -= 1;
+                    int intvalu = intinputcomp.Value_;
+                    uilabelintinput.text = (intvalu - 1) + "";
+                    intinputcomp.value = (intvalu - 1) + "";
+                    intinputcomp.Value_ = intvalu - 1;
+                    lastZDivide = intinputcomp.Value_;
                     SDNOEA_Set2();
                 }
                 
@@ -2699,9 +2729,11 @@ namespace Mod.ObjectDivider.Harmony
             {
                 UIExIntegerInput intinputcomp = tabSystemUIRootIntInput2P.GetComponent<UIExIntegerInput>();
                 UILabel uilabelintinput = FOONIC(tabSystemUIRootIntInput2P, "ValueLabel").GetComponent<UILabel>();
-                uilabelintinput.text = (intinputcomp.Value_ + 1) + "";
-                intinputcomp.value = (intinputcomp.Value_ + 1) + "";
-                lastZDivide += 1;
+                int intvalu = intinputcomp.Value_;
+                uilabelintinput.text = (intvalu + 1) + "";
+                intinputcomp.value = (intvalu + 1) + "";
+                intinputcomp.Value_ = intvalu + 1;
+                lastZDivide = intinputcomp.Value_;
                 SDNOEA_Set2();
             }
         }
@@ -2714,9 +2746,11 @@ namespace Mod.ObjectDivider.Harmony
                 UILabel uilabelintinput = FOONIC(tabSystemUIRootIntInput3P, "ValueLabel").GetComponent<UILabel>();
                 if ((intinputcomp.Value_ - 1) >= 0)
                 {
-                    uilabelintinput.text = (intinputcomp.Value_ - 1) + "";
-                    intinputcomp.value = (intinputcomp.Value_ - 1) + "";
-                    lastXDivide -= 1;
+                    int intvalu = intinputcomp.Value_;
+                    uilabelintinput.text = (intvalu - 1) + "";
+                    intinputcomp.value = (intvalu - 1) + "";
+                    intinputcomp.Value_ = intvalu - 1;
+                    lastXDivide = intinputcomp.Value_;
                     SDNOEA_Set3();
                 }
             }
@@ -2728,9 +2762,11 @@ namespace Mod.ObjectDivider.Harmony
             {
                 UIExIntegerInput intinputcomp = tabSystemUIRootIntInput3P.GetComponent<UIExIntegerInput>();
                 UILabel uilabelintinput = FOONIC(tabSystemUIRootIntInput3P, "ValueLabel").GetComponent<UILabel>();
-                uilabelintinput.text = (intinputcomp.Value_ + 1) + "";
-                intinputcomp.value = (intinputcomp.Value_ + 1) + "";
-                lastXDivide += 1;
+                int intvalu = intinputcomp.Value_;
+                uilabelintinput.text = (intvalu + 1) + "";
+                intinputcomp.value = (intvalu + 1) + "";
+                intinputcomp.Value_ = intvalu + 1;
+                lastXDivide = intinputcomp.Value_;
                 SDNOEA_Set3();
             }
         }
